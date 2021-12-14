@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Javascript</title>
+        <link rel="stylesheet" href="../google/css/bootstrap.css" type="text/css" />
+    </head>
+    <script>
+        function greet(){
+            let name = 
+            document.querySelector('#n-name').value;
+            alert('Welcome ' + name );
+            document.getElementsById('mary').innerHTML 
+            += 
+              "<h3>This is the text which has been inserted by JS</h3>";
+        }
+    </script>
+    <body>
+        <form onsubmit="greet(); return false">
+            <input style="border-radius: 5px; border-color: black; " type="text" name="name" id="n-name" />
+            <input type="submit" style="background-color: green; border-color: black; color: white"/>
+        </form>
+
+        <div id="mary" class="alert alert-primary" role="alert">
+            
+        </div>
+        </body>
+</html>

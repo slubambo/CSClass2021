@@ -1,0 +1,17 @@
+.dp{
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+.fright{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+
+.sn-img{
+    width: 50%;
+    position: relative;
+    margin: auto!important;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Javascript</title>
+        <link rel="stylesheet" href="../google/css/bootstrap.css" type="text/css" />
+    </head>
+    <script>
+
+
+        function changebg(colorName){
+            let body = document.querySelector('body');
+
+            body.style.backgroundColor = colorName;
+        }
+
+    
+    </script>
+    <body>
+        <div class="container">
+            <button id="red"  type="button" class="btn btn-primary">R</button>
+            <button onclick="changebg('green'); return false;" type="button" class="btn btn-secondary">G</button>
+            <button onclick="changebg('blue'); return false;" type="button" class="btn btn-success">B</button>
+        </div>
+        <script>
+            document.querySelector('#red').addEventListener(
+                'click', function(){
+                    let body = document.querySelector('body');
+
+                    body.style.backgroundColor = "red";
+                });
+            
+        </script>
+    </body>
+</html>
